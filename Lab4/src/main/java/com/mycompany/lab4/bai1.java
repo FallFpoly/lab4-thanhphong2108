@@ -8,9 +8,19 @@ package com.mycompany.lab4;
  *
  * @author ICT
  */
-public class bai1 {
+import java.util.Scanner;
 
+public class bai1 {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner sc = new Scanner(System.in);
+        SanPham sp = new SanPham();
+
+        System.out.println("=== BÀI 1: NHẬP/XUẤT SẢN PHẨM ===");
+        sp.nhap(sc);
+        sp.xuat();
+
+        sc.close();
     }
 }
+
+
